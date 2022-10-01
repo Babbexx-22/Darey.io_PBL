@@ -178,7 +178,7 @@ To test the setup with a PHP script, it is best to set up [an Apache Virtual Hos
 
 ` http://<Public-IP-Address>:80 ` 
 
-![Final index.html](https://user-images.githubusercontent.com/114196715/193411249-42ee74e3-c216-438f-9a34-0c1acd5e054a.png)
+![Final index page](https://user-images.githubusercontent.com/114196715/193412388-3d5fbb5f-7253-4c81-a864-fb4c93c3c348.png)
 
 
 ## STEP 5 — enable php on the website
