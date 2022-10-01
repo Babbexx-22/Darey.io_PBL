@@ -149,10 +149,10 @@ To test the setup with a PHP script, it is best to set up [an Apache Virtual Hos
 
 ` sudo ls /etc/apache2/sites-available `
 
-![ls sites-available](https://user-images.githubusercontent.com/114196715/193411155-198fd76e-4fb7-4629-86b7-28a6df1b716a.png)
+![ls sites-available](https://user-images.githubusercontent.com/114196715/193412242-f37f7cf4-5539-439a-89c6-82640e99abd5.png)
 
 
-- As seen above, the '000-default' directory is the config file for the server block enabled by default in Apache to serve documents from the /var/www/html directory. If not disabled, it will overwrite the projectmuku config file when one tries to access the website URL using its public IP address. 
+- As seen above, the '000-default' directory is the config file for the server block enabled by default in Apache to serve documents from the /var/www/html directory. If not disabled, it will overwrite the Projectlamp config file when one tries to access the website URL using its public IP address. 
 
 * Enable the new virtual host using 'a2ensite' command
 
