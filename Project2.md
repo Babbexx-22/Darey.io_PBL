@@ -57,7 +57,7 @@ MySQL is an open-source relational database system and is the third layer of the
 
 ## STEP 3 — installing php
 Now that we have Nginx installed as our web server and MySQL as the database, we can can install PHP to process code and generate dynamic content for the web server.
-- In contrast to Apache which embeds the PHP interpreter in each request, Nginx requires an external program called *PHP-FPM*; PHP fastCGI process manager. This serves as its PHP interpreter to whic Nginx pass PHP requests for processing.
+- In contrast to Apache which embeds the PHP interpreter in each request, Nginx requires an external program called *PHP-FPM*; PHP fastCGI process manager. This serves as its PHP interpreter to which Nginx pass PHP requests for processing.
 - We'll also install php-mysql, a module that allows PHP to communicate with MySQL-based databases.
 
 * The two packages are installed at once;
