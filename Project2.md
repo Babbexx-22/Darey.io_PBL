@@ -90,7 +90,7 @@ When using Nginx web server, we can create server blocks (similar to Apache virt
 
 server {
     listen 80;
-    server_name projectLEMP www.projectLEMP;
+    server_name projectLEMP 52.91.30.159;
     root /var/www/projectLEMP;
 
     index index.html index.htm index.php;
@@ -120,7 +120,7 @@ server {
 
 * Activate your configuration by linking to the config file from Nginx’s sites-enabled directory:
 
-` sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/ `
+` sudo ln -s /etc/nginx/sites-available/projectLEMP.conf /etc/nginx/sites-enabled/ `
 
 - This will tell Nginx to use the configuration next time it is reloaded
 
