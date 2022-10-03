@@ -212,9 +212,10 @@ mysql> );
 
 ```
 INSERT INTO Mukhtar_DB.about_muku (content) VALUES ("My Name");
-INSERT INTO Mukhtar_DB.about_muku (content) VALUES ("My Aspiration");
-INSERT INTO Mukhtar_DB.about_muku (content) VALUES ("My Current Program");
-INSERT INTO Mukhtar_DB.about_muku (content) VALUES ("Duration of Program");
+INSERT INTO Mukhtar_DB.about_muku (content) VALUES ("My Name is Mukhtar");
+INSERT INTO Mukhtar_DB.about_muku (content) VALUES ("My Aspiration is to become a DevOps Engineer");
+INSERT INTO Mukhtar_DB.about_muku (content) VALUES ("My Current Program is Darey.io_PBL");
+INSERT INTO Mukhtar_DB.about_muku (content) VALUES ("Duration of Program is 6 months");
 
 ```
 
