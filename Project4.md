@@ -199,7 +199,7 @@ app.controller('myCtrl', function($scope, $http) {
 
 ```
 
-* In 'public' folder, create an index.html file and input the folowing code into it:
+* In 'public' folder, create an index.html file and input the following code into it:
 
 ```
 <!doctype html>
