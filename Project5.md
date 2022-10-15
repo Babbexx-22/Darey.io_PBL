@@ -18,7 +18,7 @@
 
 - Here, our terminal is the client wherefrom requests originated to the server, www.propitixhomes.com.
 
-* Create and configure two Linux-based virtual servers (EC2 instances in AWS)
+## Create and configure two Linux-based virtual servers (EC2 instances in AWS)
 - Server A name - 'mysql server'
 - Server B name - 'mysql client'
 
@@ -62,7 +62,6 @@ GRANT ALL PRIVILEGES ON Muku_DB.* TO 'Mukhtar'@'%' WITH GRANT OPTION;
 
 - The most basic client that one can use is the command line tool, most commonly known as MySQL client.
 
-
 * After updating and upgrading your ubuntu, to install the client, run: ` sudo apt-get install mysql-client `
 
 * Confirm if it was successfully installed. ` mysql -V `
@@ -72,7 +71,7 @@ GRANT ALL PRIVILEGES ON Muku_DB.* TO 'Mukhtar'@'%' WITH GRANT OPTION;
 * Note that mysql server should allow remote access to the server in order for the MySQL client to connect from a remote location. This, we shall do in the next step.*
 
 
-* Configure MySQL server to allow connections from remote hosts:
+## Configure MySQL server to allow connections from remote hosts:
 
 - The default behavior of the Ubuntu MySQL Server blocks all remote connections which prevent us from accessing the database server from the outside.
 
