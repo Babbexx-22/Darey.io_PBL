@@ -42,7 +42,7 @@ curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 ![2](https://user-images.githubusercontent.com/114196715/195963621-4029eebb-0c32-430b-9fb9-bce7a3fca2d7.png)
 
-* NB: I discovered that the above public key and the list file specified only works with Ubuntu v20.04. The default AWS Ubuntu AMI comes with v22.04. As such, surf the web for corresponding public key and list file for insalling mongoDB on Ubuntu v22.04 if you want to use that version.*
+* NB: I discovered that the above public key and the list file specified only works with Ubuntu v20.04. The default AWS Ubuntu AMI comes with v22.04. As such, surf the web for corresponding public key and list file for installing mongoDB on Ubuntu v22.04 if you want to use that version.*
 
 * Install MongoDB : ` sudo apt install -y mongodb `
 
