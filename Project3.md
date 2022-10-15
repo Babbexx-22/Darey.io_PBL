@@ -1,4 +1,4 @@
-PROJECT THREE: DEPLOYING A MERN STACK
+#PROJECT THREE: DEPLOYING A MERN STACK
 
 ## MERN is one of several variations of the MEAN stack (MongoDB Express Angular Node), where the traditional Angular.js front-end framework is replaced with React.js.
 MERN is acronym for; 
@@ -127,6 +127,7 @@ module.exports = router;
 - Since the app is going to make use of the MongoDB database, we need to create a model.
 - A model is the heart of JavaScript based applications, and it is what makes it interactive. These models will be used to define the database schema so we can define the fields stored in each MongoDB document.
 - In essence, the Schema is a blueprint of how the database will be constructed, including other data fields that may not be required to be stored in the database. These are known as virtual properties.
+
 
 * To create a Schema and a model, install mongoose which is a Node.js package that makes working with mongodb easier.
 - cd back to the 'To-do' folder and install mongoose: ` cd .. `
@@ -423,7 +424,6 @@ return (
 export default ListTodo
 
 ```
-N.B: 'export default ListTodo' above did'nt finish with a ';' sign.. could be a bug, watch out!!!!
 
 * In the 'Todo.js' file, input the following code:
 
