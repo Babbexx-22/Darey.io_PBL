@@ -25,7 +25,7 @@ curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 * Install NodeJS
 ` sudo apt install -y nodejs `
-- This command installs both nodejs and npm, a node packet manager
+- This command installs both nodejs and npm, a node package manager
 
 ![1](https://user-images.githubusercontent.com/114196715/195963599-46961c16-9a76-4eb4-93f4-adb000c63527.png)
 
