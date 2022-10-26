@@ -1,6 +1,6 @@
 ## PROJECT 6: WEB SOLUTION WITH WORDPRESS
 - WordPress is a free and open-source content management system (CMS) written in hypertext preprocessor language[PHP] and paired with a MySQL or MariaDB database with supported HTTPS. 
-- WordPress is a factory that makes webpages: it stores content and enables a user to create and publish webpages, requiring nothing beyond a domain and a hosting service.
+- WordPress is a factory that makes webpages: It stores content and enables a user to create and publish webpages, requiring nothing beyond a domain and a hosting service.
 - Generally, web, or mobile solutions are implemented based on what is called the Three-tier Architecture; a client-server software architecture pattern that comprise of 3 separate layers:
 1.Presentation Layer (PL): This is the user interface such as the client server or browser on your laptop.
 2.Business Layer (BL): This is the backend program that implements business logic. Application or Webserver
@@ -47,7 +47,7 @@ sudo pvcreate /dev/xvdg1
 sudo pvcreate /dev/xvdh1
 
 ```
-* Verify that the physical volumes were created successfully with ` sudp pvs `.
+* Verify that the physical volumes were created successfully by running ` sudo pvs `.
 
 ![5](https://user-images.githubusercontent.com/114196715/197939921-7d4d96c7-16a7-4feb-9a5f-df9a9a989a1c.png)
 
