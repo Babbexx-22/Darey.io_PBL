@@ -181,7 +181,7 @@ INSERT INTO ‘users’ (‘id’, ‘username’, ‘password’, ’email’, 
 
 - Apply tooling-db.sql script to your database using this command ` mysql -h <database-private-ip> -u <db-username> -p <db-pasword> < tooling-db.sql `.
 
-* Open the website in your browser 'http://<Web-Server-Public-IP-Address-or-Public-DNS-Name>/index.php'
+* Open the website in your browser 'http:/<Web-Server-Public-IP-Address-or-Public-DNS-Name>/index.php'
 
 - Make sure you can login into the website with myuser user.
 
