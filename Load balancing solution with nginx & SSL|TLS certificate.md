@@ -116,7 +116,7 @@ Test secured access to your Web Solution by trying to reach https://<your-domain
 
 A padlock pictogram appears in the browser’s search string, signifying secured connection. Clicking on the padlock icon brings the details of the certificate issued for our website.
 
-ATTACH SCREENSHOT
+![certificate details](https://user-images.githubusercontent.com/114196715/202041050-85380acf-29a5-495c-bf0a-78972f66444d.png)
 
 6. Set up periodical renewal of your SSL/TLS certificate
 
