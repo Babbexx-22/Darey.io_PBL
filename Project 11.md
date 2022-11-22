@@ -6,7 +6,7 @@ Ansible’s main strengths are simplicity and ease of use. It also has a strong 
 
 The architecture of our setup is as shown below:
 
-![archy](https://user-images.githubusercontent.com/114196715/203436509-9ed4d85e-d7c4-4f6e-9c6e-dfd4c6f2351e.png)
+![archy](https://user-images.githubusercontent.com/114196715/203439619-33aa3ced-9731-403f-a581-0f5d6605e26a.png)
 
 ANSIBLE CLIENT AS A JUMP SERVER (Bastion Host)
 
@@ -79,7 +79,7 @@ I did this on the vs code terminal using ` git checkout -b <name of branch> `. T
 
 * Set up ssh agent, add key pair and ssh into your jenkins-ansible server using ssh agent. 
 
-On my local system, I installed open-ssh server and client as well as ssh agent. This was followed by adding my aws key pair to ssh agent using `ssh-add <key pair>` and confirmed with `ssh-add -l`. Since this is the key pair used in creating all my servers, SSH into these servers is made easy by simply using `ssh -A ubuntu@public IP 0r ssh -A ec2-user@public IP ` depending on the linus AMI used. Thus, ssh agent renders the key pair for use when needed.
+On my local system, I installed open-ssh server and client as well as ssh agent. This was followed by adding my aws key pair to ssh agent using `ssh-add <key pair>` and confirmed with `ssh-add -l`. Since this is the key pair used in creating all my servers, SSH into these servers is made easy by simply using `ssh -A ubuntu@public IP 0r ssh -A ec2-user@public IP ` depending on the linux AMI used. Thus, ssh agent renders the key pair for use when needed.
 
 - Now, ssh into your Jenkins-Ansible server using ssh-agent
 
@@ -170,7 +170,7 @@ git push origin Project11
 
 Once your code changes appear in master branch – Jenkins will do its job and save all the files (build artifacts) to ` /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/ ` directory on Jenkins-Ansible server.
 
-![build in jenkins]https://user-images.githubusercontent.com/114196715/203437813-975f479b-4df1-4030-a80c-a5d5b5bb0a95.png)
+![build in jenkins](https://user-images.githubusercontent.com/114196715/203437813-975f479b-4df1-4030-a80c-a5d5b5bb0a95.png)
 
 ## Step 7 – RUN FIRST ANSIBLE TEST
 
