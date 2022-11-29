@@ -155,11 +155,11 @@ ansible-galaxy init webserver
 
 ![uat](https://user-images.githubusercontent.com/114196715/204667908-9873ec29-0a00-4ee2-907b-79bdaf25b37f.png)
 
-4. In "/etc/ansible/ansible.cfg" file uncomment roles_path string and provide a full path to your roles directory; roles_path = /home/ubuntu/ansible-config-artifact/roles, so Ansible could know where to find configured roles.
+4. In "/etc/ansible/ansible.cfg" file, uncomment "roles_path" string and provide a full path to your roles directory; roles_path = /home/ubuntu/ansible-config-artifact/roles, so Ansible could know where to find configured roles.
 
-NOTE: Due to an issue I encountered with my copy artifact plugin(wherein subsequent builds wasn't copied successfully), I had to change my role path to /var/lib/jenkins/jobs/Ansible/builds/20/archive/roles with the number "21" representing the latest jenkins build number secondary to my github push. I resorted to this step as my playbook threw an error indicating that it couldnt find my role "webserver" in the former declared location "/home/ubuntu/ansible-config-artifact/roles".
+NOTE: Due to an issue I encountered with my copy artifact plugin(wherein subsequent builds wasn't copied successfully), I had to change my role path to /var/lib/jenkins/jobs/Ansible/builds/20/archive/roles with the number "20" representing the latest jenkins build number secondary to my github push. I resorted to this step as my playbook threw an error indicating that it couldnt find my role "webserver" in the former declared location "/home/ubuntu/ansible-config-artifact/roles".
 
-![my role path](https://user-images.githubusercontent.com/114196715/204668034-604452a1-b924-4597-9811-8e1d4b54bd14.png]
+![my role path](https://user-images.githubusercontent.com/114196715/204668034-604452a1-b924-4597-9811-8e1d4b54bd14.png)
 
 5. within the main.yml file in the tasks directory, write configuration tasks to do the following:
 
