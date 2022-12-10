@@ -136,13 +136,15 @@ mv geerlingguy.nginx/ nginx
   
 * Update both static-assignment and site.yml files to refer the roles.
 
-- The static assignment folder was updated the contain db.yml file and lb.yml file.
+- The static assignment folder was updated to contain db.yml file and lb.yml file.
 
+The db.yml file is as below;
 ![db yml](https://user-images.githubusercontent.com/114196715/206764587-acfe2cba-2cc8-4934-b3fb-ceb3bfd791f2.png)
-  
+ 
+The lb.yml file is as shown below;
 ![lb yml](https://user-images.githubusercontent.com/114196715/206764806-7b0eb900-f0c1-4ef6-aacb-e723b869eb2c.png)
   
-- The site.yml file was updated to refer the above playbooks (db.yml and lb.yml) as well as the env-vars.yml file.  A copy of the file is attached below;
+- The site.yml file was then updated to refer the above two playbooks (db.yml and lb.yml) as well as the env-vars.yml file.  A copy of the file is attached below;
 
 ![site yml](https://user-images.githubusercontent.com/114196715/206764925-db2f8cf3-4bc3-4d08-b2d8-ad56590ee4e7.png)
   
@@ -187,6 +189,7 @@ To test this, you can update inventory for each environment and run Ansible agai
 ## LB CONFIGURATION SETTINGS FOR APACHE ROLE.
 
 From our knowledge of loadbalancing with apache in the previous project, the following points are crucial when configuring apache as a loadbalancer;
+We shall highlight the points to guide us to where necessary modifications will be made in the downloaded roles. 
 
 ### INSTALLING APACHE AND STARTING THE SERVICE
 
@@ -215,7 +218,7 @@ sudo a2enmod lbmethod_bytraffic
   notify: restart apache
 
 ```
-and carefully placed within the "#configure Apache" option present in the file:
+and carefully placed within the "#configure Apache" section present in the file:
 
 ![lb apache dependencies task](https://user-images.githubusercontent.com/114196715/206765193-a578b739-9f75-4951-a165-2d61a692f939.png)
   
@@ -242,7 +245,8 @@ The apache virtual host configuration for loadbalancing shown above was placed i
 
 ![vhost conf j2](https://user-images.githubusercontent.com/114196715/206765398-b85af287-966e-48ca-9ca9-2f5443fe67b9.png)
 
-In the defaults/main.yml file of the apache role, make the following changes;
+
+Other modifications that will be done in the defaults/main.yml file of the apache role are noted below ;
  
 - Define the loadbalancer name (server group) in the apache vhost section as shown below:
 
@@ -256,7 +260,7 @@ In the defaults/main.yml file of the apache role, make the following changes;
 
 ![remove default apache](https://user-images.githubusercontent.com/114196715/206765781-d49970f8-b5a7-47ff-bfb6-c3f037108074.png)
 
-Finally, enable the apache loadbalacer conditions that was defined in env-vars/uat.yml file as shown below
+Finally, enable the apache loadbalacer conditions that was defined in env-vars/uat.yml file by setting the variable to true.
 
 ![env-vars](https://user-images.githubusercontent.com/114196715/206765916-c1f0ce7c-c22d-46bb-a051-28d7baba7275.png)
       
@@ -288,9 +292,9 @@ Above, the nginx condition was commented out. The converse will apply when we ar
 
 From our knowledge of loadbalancing with Nginx in the previous project, the following points are crucial when configuring nginx as a loadbalancer;
 
-### Updating the '/etc/hosts' file to incude the web servers’ names (e.g. Web1 and Web2) and their private IP addresses.
+### Updating the '/etc/hosts' file to include the web servers’ names (e.g. Web1 and Web2) and their private IP addresses.
 
-This was done using Ansible blockinfile module. The module is used to insert, update or remove a block of lines (multi-line text) from files on the remote nodes, and these blocks are surrounded by the marker like begin and end which can be a custom marker. This module helps to work with the different types of the files.
+This was done using Ansible blockinfile module. The module is used to insert, update or remove a block of lines (multi-line text) from files on the remote nodes. These blocks are surrounded by the marker like begin and end which can be a custom marker. The module helps to work with the different types of files.
 
 The code below was thus included in tasks/main.yml file within the vhost configuration section.
 
@@ -331,12 +335,12 @@ server {
 ![nginx upstream](https://user-images.githubusercontent.com/114196715/206768435-bfb684b3-4986-430f-a32d-f932d13596bb.png)
       
       
-### Enable loadbalancer using nginx by setting the condition to true in the same defaults/main.yml file
+### Enable loadbalancer using nginx by setting the variable to true in the same defaults/main.yml file
 
 ![enable nginx lb](https://user-images.githubusercontent.com/114196715/206768580-7023bc9b-b6be-4088-9cc5-40819b1ef2ca.png)
       
       
-### In the same defaults/main.ym file, enable nginx extra http options by uncommenting the said section as shown below. Also, remove the default nginx page.
+### In the same defaults/main.yml file, enable nginx extra http options by uncommenting the said section as shown below. Also, remove the default nginx page by setting the remove default page to true. 
  
 ![EXTRA HTTP OPTIONS](https://user-images.githubusercontent.com/114196715/206768665-5325301a-3a84-40e1-9de5-9653562c2767.png)
       
@@ -346,7 +350,7 @@ server {
 ![server block nginx](https://user-images.githubusercontent.com/114196715/206769120-e5e5fc0a-1d70-42d0-92dd-a2cf91136eec.png)
       
 
-### Finally, set the nginx loadbalancer condition to true in env-vars/uat.yml file
+### Finally, set the nginx loadbalancer variable to true in env-vars/uat.yml file
 
 ![ENV VARS NGINX](https://user-images.githubusercontent.com/114196715/206769355-2f7d6bd9-8e68-4ef6-8d95-4948afc43192.png)
       
