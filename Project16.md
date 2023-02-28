@@ -7,7 +7,7 @@ The architectural design is presented below;
 
 ![Arch](https://user-images.githubusercontent.com/114196715/221730434-a0091eb1-4a5f-4057-be8c-02a4194444d3.png)
 
-Prerequisites before you begin writing Terraform code
+Prerequisites before you begin writing Terraform code;
 
 - Create an IAM user, name it terraform (ensure that the user has only programatic access to your AWS account) and grant this user AdministratorAccess permissions.
 
@@ -26,7 +26,7 @@ sudo apt update && sudo apt install terraform -y
 
 - Configure programmatic access from your workstation to connect to AWS using the access keys copied above and a Python SDK (boto3). You must have Python 3.6 or higher on your workstation.
 
-STEPS TO INSTALL BOTO3
+## STEPS TO INSTALL BOTO3
 
 First install python 3.7 and above as use with python 3.6 is deprecated.
 
@@ -42,7 +42,7 @@ Check the version of Boto3 installed ; `pip show boto3`
 
 ![boto3 installed](https://user-images.githubusercontent.com/114196715/221730881-4aeae960-163f-400f-9fa4-67130204c776.png)
 
-CONFIGURATION 
+## CONFIGURATION 
 
 Before using Boto3, you need to set up authentication credentials for your AWS account using either the IAM Console or the AWS CLI. We shall install AWS CLI on our terraform instance; ` sudo apt install awscli `
 
@@ -102,7 +102,7 @@ We shall accomplish this with the ` terraform init ` command.
 
 ![terraf init](https://user-images.githubusercontent.com/114196715/221731405-74648e0a-739f-4a36-a3ce-89c5bb052fe3.png)
 
-Observations: a new directory has been created: ".terraform\....", This is where Terraform keeps plugins. Generally, it is safe to delete this folder. It just means that one must execute terraform init again, to download them.
+*OBSERVATIONS*: a new directory has been created: ".terraform\....", This is where Terraform keeps plugins. Generally, it is safe to delete this folder. It just means that one must execute terraform init again, to download them.
 
 ![dot terraaf](https://user-images.githubusercontent.com/114196715/221731514-61382d66-43a5-4bb4-aeda-b9c738ab8518.png)
 
@@ -110,7 +110,7 @@ Observations: a new directory has been created: ".terraform\....", This is where
 
 ![vpc terraf](https://user-images.githubusercontent.com/114196715/221732560-5662f1c8-b3d2-4351-ad73-2f00ec59732a.png)
 
-OBSERVATIONS:
+*OBSERVATIONS*:
 
 - A new file is created "terraform.tfstate". This is how Terraform keeps itself up to date with the exact state of the infrastructure. It reads this file to know what already exists, what should be added, or destroyed based on the entire terraform code that is being developed.
 
@@ -148,7 +148,7 @@ According to our architectural design, we require 6 subnets: 2 public, 2 private
 
 ![aws pub sub created](https://user-images.githubusercontent.com/114196715/221731837-6199f36b-e029-45d0-979b-7500da09adaa.png)
 
-OBSERVATIONS:
+*OBSERVATIONS*:
 
 - Hard coded values: Both the availability_zone and cidr_block arguments are hard coded. We should always endeavour to make our work dynamic.
 
