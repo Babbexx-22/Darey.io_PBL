@@ -1,4 +1,5 @@
 ## LAMP STACK IMPLEMENTATION (USING AWS AS THE CLOUD PROVIDER)
+
 ### What is a technology stack? 
 A technology stack is a set of technology (framework and tools) used to develop a software product. They are essential for building easy-to-maintain, scalable web applications.
 A **LAMP** stack is a bundle of four different software technologies;
