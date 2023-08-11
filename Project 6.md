@@ -1,4 +1,5 @@
 ## PROJECT 6: WEB SOLUTION WITH WORDPRESS
+
 - WordPress is a free and open-source content management system (CMS) written in hypertext preprocessor language[PHP] and paired with a MySQL or MariaDB database with supported HTTPS. 
 - WordPress is a factory that makes webpages: It stores content and enables a user to create and publish webpages, requiring nothing beyond a domain and a hosting service.
 - Generally, web, or mobile solutions are implemented based on what is called the Three-tier Architecture; a client-server software architecture pattern that comprise of 3 separate layers:
