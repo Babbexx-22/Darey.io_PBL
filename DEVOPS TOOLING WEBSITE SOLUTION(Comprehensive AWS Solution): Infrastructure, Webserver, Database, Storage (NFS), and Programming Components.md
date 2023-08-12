@@ -1,12 +1,21 @@
-## DEVOPS TOOLING WEBSITE SOLUTION
+## DEVOPS TOOLING WEBSITE SOLUTION (COMPREHENSIVE AWS SOLUTION): Infrastructure, Webserver, Database, Storage (NFS), and Programming Components
 
-### In this project, we will implement a solution that consists of following components: 
-- Infrastructure: AWS
-- Webserver Linux: 3 ec2 instances of Red Hat Enterprise Linux 8 AMI
-- Database Server: Ubuntu 20.04 + MySQL
-- Storage Server: Red Hat Enterprise Linux 8 + NFS Server
-- Programming Language: PHP
-- Code Repository: GitHub
+
+In this project, we will design and deploy a comprehensive solution using Amazon Web Services (AWS), integrating a range of vital components to create a cohesive and high-performing system. The key elements of our solution include:
+
+- Infrastructure: Leveraging the capabilities of AWS to establish a robust and scalable foundation for our project.
+
+- Webserver Linux: Deploying three instances of Red Hat Enterprise Linux 8 AMI on EC2 to build a reliable and responsive web server environment.
+
+- Database Server: Setting up a MySQL database server on Ubuntu 20.04 to manage data storage and retrieval efficiently.
+
+- Storage Server (NFS): Incorporating a dedicated storage server using Red Hat Enterprise Linux 8 and NFS Server technology, enabling seamless file sharing and data accessibility.
+
+- Programming Language: Utilizing PHP as the primary programming language to develop dynamic and interactive web applications, enhancing user engagement and interactivity.
+
+- Code Repository: Managing our project's source code efficiently through GitHub, ensuring version control and collaboration.
+
+**This project represents a holistic approach to system design, implementation, and management, utilizing AWS and incorporating critical components such as web servers, databases, storage (NFS), and programming, all united to deliver a unified and efficient solution**.
 
 - The architecture below shows a common pattern where several stateless Web Servers share a common database and also access the same files using Network File Sytem (NFS) as a shared file storage. Even though the NFS server might be located on a completely separate hardware – for Web Servers it look like a local file system from where they can serve the same files.
 
