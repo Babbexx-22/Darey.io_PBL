@@ -1,4 +1,5 @@
 ## PROJECT THREE: DEPLOYING A MERN STACK
+
 ## MERN is one of several variations of the MEAN stack (MongoDB Express Angular Node), where the traditional Angular.js front-end framework is replaced with React.js.
 MERN is acronym for; 
 - Mongo DB (a document based non-relational database used to store application data in a form of documents.)
