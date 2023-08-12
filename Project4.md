@@ -1,4 +1,5 @@
 ## MEAN STACK DEPLOYMENT TO UBUNTU IN AWS
+
 The MEAN stack is a JavaScript-based framework for developing web applications. It is a combination of ;
 - MongoDB (Document database) – Stores and allows to retrieve data.
 - Express (Back-end application framework) – Makes requests to Database for Reads and Writes.
