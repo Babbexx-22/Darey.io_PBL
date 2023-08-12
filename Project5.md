@@ -1,5 +1,6 @@
 ## CLIENT-SERVER ARCHITECTURE WITH MYSQL
 
+
 ![1](https://user-images.githubusercontent.com/114196715/195963990-982d2e4c-78d4-48ac-ace3-3d6ba6043924.png)
 
 - Client-server model is a distributed application structure that partitions tasks or workloads between the providers of a resource or service, called servers, and service requesters, called clients.
