@@ -1,5 +1,6 @@
 ## AUTOMATE INFRASTRUCTURE WITH IAC USING TERRAFORM PART 1
 
+
 In previous implementations, we have built AWS infrastructure for 2 websites manually, it is time to automate the process using Terraform.
 The same setup will be built with the power of Infrastructure as Code (IaC).
 
